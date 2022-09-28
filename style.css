@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@200;400;600&display=swap');
+
+/*
+ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.upper-section {
+    width: 100%;
+    height: 25%;
+
+}
+
+.text-section {
+    text-align: center;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-section>h1:first-child {
+    padding-top: 3rem;
+    margin-bottom: 0.4rem;
+    font-size: 2rem;
+    font-weight: 200;
+    color: hsl(180, 62%, 55%);
+}
+
+.text-section>h1:nth-child(2) {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.text-section>p {
+    font-size: .8rem;
+    color: hsl(229, 6%, 66%);
+    font-size: .7rem;
+}
+
+
+
+.lower-section {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width: 92%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.element>h3 {
+    margin-top: 1rem;
+}
+
+.element>h3,
+.element>p {
+    margin-left: 2rem;
+}
+
+.element>p {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: .7rem;
+    padding-right: 2rem;
+}
+
+.first {
+    margin-bottom: 3rem;
+}
+
+.element>img {
+    float: right;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.element>hr {
+    height: 5px;
+}
+
+.element {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 92%;
+    height: 50%;
+    box-shadow: -1px 1px 14px hsl(229deg 6% 66%);
+
+}
+
+.left-column>.element>hr {
+    background-color: hsl(180, 62%, 55%);
+
+}
+
+.middle-column>.first>hr {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.middle-column>.second>hr {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.right-column>.element>hr {
+    background-color: hsl(212, 86%, 64%);
+}
+
+@media (min-width: 0px) and (max-width: 541px) {
+    .lower-section {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .text-section>p:last-child {
+        margin-bottom: 1rem;
+    }
+
+    .text-section {
+        padding: 2rem;
+    }
+
+    .upper-section>.text-section>h1 {
+        font-size: 1rem;
+    }
+
+}
+
+@media (height: 280px) and (orientation: landscape) {
+
+    .element>h3,
+    .element>p {
+        margin-left: 1rem;
+    }
+}
